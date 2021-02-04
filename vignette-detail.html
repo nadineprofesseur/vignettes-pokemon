@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Vignette-détail des pokémon</title>
+    <style>
+        body
+        {
+            background-color:deepskyblue;
+        }
+        .vignette-pokemon
+        {
+            background-color:white;
+            height:200px;
+            width:200px;
+            border:1px black solid;
+            
+            border-radius:100px;
+            float:left;
+            margin-right:10px;
+            cursor:pointer;
+            /*overflow:hidden;*/
+        }
+        .vignette-pokemon:hover
+        {
+            opacity:0.7;
+            cursor:pointer;
+        }
+        .vignette-pokemon img
+        {
+            height:200px;
+        }
+        #zone-affichage
+        {
+            background-color:white;
+            width:700px;
+            height:500px;
+            float:left;
+            margin-left:200px;
+            margin-top:10px;
+            border:solid 3px #333333;
+            border-radius:30px;
+        }
+        .detail-pokemon
+        {
+            display:none;
+			
+			width:700px;height:700px;border:solid 1px black;			
+        }
+		
+		.pokemon-nom
+		{
+			height:10px;font-size:30px;margin-right:auto;margin-left:auto;
+		}
+		.pokemon-description
+		{
+			float:left;width:300px;
+		}
+		
+		.pokemon-illustration
+		{
+			float:left;width:300px;
+		}
+		
+    </style>
+    
+    <script>
+    
+        function afficherDetailPokemon(pokemon)
+        {
+            //alert('detail');
+            //alert(pokemon);
+            detail = document.getElementById('detail-' + pokemon);
+            //if(detail) alert(detail.innerHTML);
+            zoneAffichage = document.getElementById('zone-affichage');
+            zoneAffichage.innerHTML = detail.innerHTML;
+        }
+    
+    </script>
+</head>
+<body>
+
+    <div class="vignette-pokemon" id="celebi" onmousedown="afficherDetailPokemon('celebi')">
+        <img src="illustrations/mini/celebi.png"/>
+    </div>
+    <div class="vignette-pokemon" id="qulbutoke" onmousedown="afficherDetailPokemon('qulbutoke')">
+        <img src="illustrations/mini/qulbutoke.png"/>
+    </div>
+    <div class="vignette-pokemon" id="togepi" onmousedown="afficherDetailPokemon('togepi')">
+        <img src="illustrations/mini/togepi.png"/>
+    </div>
+    
+    <div id="zone-affichage">
+
+	
+        
+    </div>
+    
+	
+    <div class="detail-pokemon" id="detail-celebi">
+        <h4 class="pokemon-nom">Célébi</h4>
+        
+        <img class="pokemon-illustration" src="illustrations/celebi.png"/>
+        
+        <div class="pokemon-description">
+            <h5>Physionomie et attitudes</h5>
+            <p>Le Celebi est un esprit ressemblant a une fée. Il est l'esprit protecteur de la forêt et peut voyager dans le temps. Il est appelé "Gardien de la forêt".</p>
+
+            <h5>Différences mâle/femelle</h5>
+            <p>Ce Pokémon est asexué, il n'y a donc pas de Celebi mâle ou femelle.</p>
+
+            <p>Dans Pokémon Donjon Mystère : Explorateurs de l'Ombre et du Temps, un Celebi chromatique est désigné comme femelle, même s'il reste asexué.</p>
+            
+            <a href="http://www.pokepedia.fr/Celebi">Voir la fiche Pokédia</a>
+            
+        </div>
+    
+    </div>
+    <div class="detail-pokemon" id="detail-qulbutoke">
+        <h4 class="pokemon-nom">Qulbutoke</h4>
+        
+        <img class="pokemon-illustration" src="illustrations/qulbutoke.png"/>
+        
+        <div class="pokemon-description">
+            <h5>Physionomie et attitudes</h5>
+            <p>Le Celebi est un esprit ressemblant a une fée. Il est l'esprit protecteur de la forêt et peut voyager dans le temps. Il est appelé "Gardien de la forêt".</p>
+
+            <h5>Différences mâle/femelle</h5>
+            <p>Ce Pokémon est asexué, il n'y a donc pas de Celebi mâle ou femelle.</p>
+
+            <p>Dans Pokémon Donjon Mystère : Explorateurs de l'Ombre et du Temps, un Celebi chromatique est désigné comme femelle, même s'il reste asexué.</p>
+            
+            <a href="http://www.pokepedia.fr/Qulbutoke">Voir la fiche Pokédia</a>
+            
+        </div>
+    
+    </div>    
+	<div class="detail-pokemon" id="detail-togepi">
+        <h4 class="pokemon-nom">Togepi</h4>
+        
+        <img class="pokemon-illustration" src="illustrations/togepi.png"/>
+        
+        <div class="pokemon-description">
+            <h5>Physionomie et attitudes</h5>
+            <p>Le Celebi est un esprit ressemblant a une fée. Il est l'esprit protecteur de la forêt et peut voyager dans le temps. Il est appelé "Gardien de la forêt".</p>
+
+            <h5>Différences mâle/femelle</h5>
+            <p>Ce Pokémon est asexué, il n'y a donc pas de Celebi mâle ou femelle.</p>
+
+            <p>Dans Pokémon Donjon Mystère : Explorateurs de l'Ombre et du Temps, un Celebi chromatique est désigné comme femelle, même s'il reste asexué.</p>
+            
+            <a href="http://www.pokepedia.fr/Celebi">Voir la fiche Pokédia</a>
+            
+        </div>
+    
+    </div>    
+    
+</body>
+</html>
